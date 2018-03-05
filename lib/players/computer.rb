@@ -32,7 +32,7 @@ module Players
         "9"
       elsif valid_moves.include?("5")
         "5"
-      else  
+      elsif   
         valid_moves.sample
       end
     end
