@@ -14,21 +14,21 @@ module Players
       valid_moves.map!{|m| (m+1).to_s}
       if board.cells[1] != " " && (board.cells[1] == board.cells[2] || board.cells[5] == board.cells[8] || board.cells[3] == board.cells[6]) && valid_moves.include?("1")
         "1"
-      elsif board.cells[1] != " " && (board.cells[0] == board.cells[2] || board.cells[4] == board.cells[7]) && valid_moves.include?("2")
+      elsif board.cells[0] != " " && (board.cells[0] == board.cells[2] || board.cells[4] == board.cells[7]) && valid_moves.include?("2")
         "2"
-      elsif board.cells[1] != " " && (board.cells[0] == board.cells[1] || board.cells[5] == board.cells[8] || board.cells[4] == board.cells[6])  && valid_moves.include?("3") 
+      elsif board.cells[0] != " " && (board.cells[0] == board.cells[1] || board.cells[5] == board.cells[8] || board.cells[4] == board.cells[6])  && valid_moves.include?("3") 
         "3"
-      elsif board.cells[1] != " " && (board.cells[4] == board.cells[5] || board.cells[0] == board.cells[6]) && valid_moves.include?("4")
+      elsif board.cells[4] != " " && (board.cells[4] == board.cells[5] || board.cells[0] == board.cells[6]) && valid_moves.include?("4")
         "4"
-      elsif board.cells[1] != " " && (board.cells[8] == board.cells[8] || board.cells[6] == board.cells[2] || board.cells[3] == board.cells[5] || board.cells[1] == board.cells[7]) &&  valid_moves.include?("5")
+      elsif board.cells[8] != " " && (board.cells[8] == board.cells[8] || board.cells[6] == board.cells[2] || board.cells[3] == board.cells[5] || board.cells[1] == board.cells[7]) &&  valid_moves.include?("5")
         "5"
-      elsif board.cells[1] != " " && (board.cells[2] == board.cells[8] || board.cells[3] == board.cells[4]) && valid_moves.include?("6")
+      elsif board.cells[2] != " " && (board.cells[2] == board.cells[8] || board.cells[3] == board.cells[4]) && valid_moves.include?("6")
         "6"
-      elsif board.cells[1] != " " && (board.cells[0] == board.cells[3] || board.cells[7] == board.cells[8] || board.cells[4] == board.cells[2]) && valid_moves.include?("7")
+      elsif board.cells[0] != " " && (board.cells[0] == board.cells[3] || board.cells[7] == board.cells[8] || board.cells[4] == board.cells[2]) && valid_moves.include?("7")
         "7"
       elsif board.cells[1] != " " && (board.cells[1] == board.cells[4] || board.cells[6] == board.cells[8]) && valid_moves.include?("8")
         "8"
-      elsif board.cells[1] != " " && (board.cells[2] == board.cells[5] || board.cells[0] == board.cells[4] || board.cells[6] == board.cells[7]) && valid_moves.include?("9")
+      elsif board.cells[2] != " " && (board.cells[2] == board.cells[5] || board.cells[0] == board.cells[4] || board.cells[6] == board.cells[7]) && valid_moves.include?("9")
         "9"
       elsif valid_moves.include?("5")
         "5"
