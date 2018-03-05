@@ -32,8 +32,15 @@ module Players
         "9"
       elsif valid_moves.include?("5")
         "5"
-      elsif   
-        valid_moves.sample
+      elsif valid_moves.include?("1") 
+        "1"
+      elsif valid_moves.include?("3") 
+        "3"
+      elsif valid_moves.include?("7")
+        "7"
+      elsif valid_moves.include?("9")
+        "9"
+      else valid_moves.sample
       end
     end
       
